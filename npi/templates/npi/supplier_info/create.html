@@ -1,0 +1,128 @@
+{% extends 'npi/supplier_info/view.html' %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+{% load user_extras %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Edit Supplier Information' '#' %}
+{% endblock %}
+
+{% block cssfiles %}
+    <link href=" {% static 'autocomplete_light/vendor/select2/dist/css/select2.css' %}" type="text/css" media="all" rel="stylesheet" />
+    <link href=" {% static 'autocomplete_light/select2.css' %}" type="text/css" media="all" rel="stylesheet" />
+{% endblock %}
+
+{% block jsfiles %}
+    <script src="{% static 'js/jquery.formset.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/jquery.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/autocomplete.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/vendor/select2/dist/js/select2.full.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/select2.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{ project.customer_name }} <span class="description">{{ project.description|default_if_none:'' }}</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-condensed table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Supplier Information</th>
+                            <th>Web Pricing</th>
+                            <th>Quotation Quantities</th>
+                            <th>Create Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> {{ project.products }} </td>
+                            <td> {{ project.supplier_info_state_string }} </td>
+                            <td> {% if project.web_pricing %}Yes{% else %}No{% endif %} </td>
+                            <td> {{ project.quotation_quantities }} </td>
+                            <td> {{ project.create_date }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label>Suppliers</label>
+                    <br/>
+                    <small class="form-text text-muted">Select Suppliers which RFQs should be sent to</small>
+                    <table id="formsetTable" border="0" cellpadding="0" cellspacing="0" class="table table-striped table-condensed table-hover table-bordered">
+                        <thead>
+                            <th>Supplier Name</th>
+                            {% if form.enabled %}
+                            <th>Enabled</th>
+                            <th>Uploaded</th>
+                            {% endif %}
+                            <th width="100px"></th>
+                        </thead>
+                        <tbody>
+                            {% for form in formset %}
+                                <tr class="form-set" {% if form.no_remove %}no_remove="no_remove"{% endif %}>
+                                    {{ form.id }}
+                                    <td>
+                                        {% if form.supplier_id.errors %}
+                                            <div class="errorlist">
+                                                {% for error in form.supplier_id.errors %}
+                                                    {{ error }}
+                                                {% endfor %}
+                                            </div>
+                                        {% endif %}
+                                        {{ form.supplier_id }}
+                                    </td>
+                                    {% if form.enabled %}
+                                        <td>{{ form.enabled }}</td>
+                                        <td>{{ form.instance.uploaded|bool_as_icon }}</td>
+                                    {% endif %}
+                                    <td></td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {{ formset.management_form }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary" value="Save"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        $('.form-set').formset({
+            formTemplate:
+                {% with formset.empty_form as form %}
+                    "<tr class=\"form-set\" >\n"+
+                    "    {{ form.id|escapejs }}\n"+
+                    "    <td>\n"+
+                    "        {{ form.supplier_id|escapejs }}\n"+
+                    "    </td>\n"+
+                    {% if form.enabled %}
+                    "    <td>{{ form.enabled|escapejs }}</td>"+
+                    "    <td></td>"+
+                    {% endif %}
+                    "    <td></td>"+
+                    "</tr>\n"
+                {% endwith %},
+            prefix: '{{ formset.prefix }}',
+            added: function(row){
+                console.log(row.find('.select2-input').html());
+                row.find('select').select2('open');
+            },
+        });
+    </script>
+{% endblock %}

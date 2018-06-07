@@ -1,0 +1,71 @@
+{% extends 'npi/supplier_info/view.html' %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+{% load component_quotation_extras %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Alternatives' 'npi:editSupplierComponentAlternatives' project_id=project.id %}
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <form method="post">
+            {% csrf_token %}
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <table class="table table-striped table-condensed table-hover table-bordered">
+                        <thead>
+                        <tr>
+                            <th colspan="2">Supplier Component</th>
+                            <th colspan="2">Customer Component</th>
+                            <th colspan="2">Supplier Component</th>
+                            <th>Current State</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <style type="text/css">
+                            td.manufacturer_missmatch {background-color: #f3f99f;}
+                            td.mpn_missmatch {background-color: #edc478;}
+                        </style>
+
+                        {% for form in form.formset %}
+                        <tr>
+                            {{ form.id }}
+                            <td>{{ form.instance.project_supplier }}</td>
+                            <td>{{ form.instance.product_code }}</td>
+                            <td {% if form.instance.component.manufacturer != form.instance.manufacturer %}class="manufacturer_missmatch"{% endif %}>
+                                {{ form.instance.component.manufacturer }}
+                            </td>
+                            <td {% if form.instance.component.mpn != form.instance.mpn %}class="mpn_missmatch"{% endif %}>
+                                {{ form.instance.component.mpn }}
+                            </td>
+                            <td {% if form.instance.component.manufacturer != form.instance.manufacturer %}class="manufacturer_missmatch"{% endif %}>
+                                {{ form.instance.manufacturer }}
+                            </td>
+                            <td {% if form.instance.component.mpn != form.instance.mpn %}class="mpn_missmatch"{% endif %}>
+                                {{ form.instance.mpn }}
+                            </td>
+                            <td>{{ form.instance|supplier_component_state }}</td>
+                            <td>{{ form.state }}</td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {{ form.formset.management_form }}
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" value="Save" class="btn btn-primary"/>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends navigation_template %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Create Project' '' %}
+{% endblock %}
+
+{% block cssfiles %}
+    <link href=" {% static 'autocomplete_light/vendor/select2/dist/css/select2.css' %}" type="text/css" media="all" rel="stylesheet" />
+    <link href=" {% static 'autocomplete_light/select2.css' %}" type="text/css" media="all" rel="stylesheet" />
+{% endblock %}
+
+{% block jsfiles %}
+    <script type="text/javascript" src="{% static 'autocomplete_light/jquery.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/autocomplete.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/vendor/select2/dist/js/select2.full.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/select2.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-12 form-group {% if form.web_pricing.errors %}has-error{% endif %}">
+                    <label class='control-label' for="{{ form.description.name }}">{{ form.description.label }}</label>
+                    {{ form.description.errors }}
+                    {{ form.description }}
+                    <small id="descriptionHelp" class="form-text text-muted">{{ form.description.help_text }}</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label class='control-label' for="{{ form.customer.name }}">{{ form.customer.label }}</label>
+                    {{ form.customer.errors }}
+                    {{ form.customer }}
+                    <small id="customerHelp" class="form-text text-muted">{{ form.customer.help_text }}</small>
+                </div>
+                <div class="col-md-6 form-group {% if form.web_pricing.errors %}has-error{% endif %}">
+                    <label class='control-label' for="{{ form.web_pricing.name }}">{{ form.web_pricing.label }}</label>
+                    {{ form.web_pricing.errors }}
+                    {{ form.web_pricing }}
+                    <small id="webPricingHelp" class="form-text text-muted">{{ form.web_pricing.help_text }}</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group {% if form.spreadsheet.errors %}has-error{% endif %}">
+                    <label class='control-label' for="{{ form.spreadsheet.name }}">{{ form.spreadsheet.label }}</label>
+                    <br/>
+                    <small id="bomTextHelp" class="form-text text-muted">{{ form.spreadsheet.help_text }}</small>
+
+                    {{ form.spreadsheet.errors }}
+                    {{ form.spreadsheet }}
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" class="btn btn-primary" value="Save"/>
+            </div>
+        </form>
+    </div>
+{% endblock %}

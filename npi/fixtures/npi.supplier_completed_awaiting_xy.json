@@ -1,0 +1,8099 @@
+[
+{
+  "model": "npi.project",
+  "pk": 1,
+  "fields": {
+    "supplier_info_state": "uploaded",
+    "bom_state": "draft",
+    "name": "CM001030",
+    "description": "TEST Project",
+    "web_pricing": true,
+    "customer_id": 1816,
+    "customer_name": "Randox Laboratories Ltd",
+    "create_date": "2018-04-16T11:53:47.814Z"
+  }
+},
+{
+  "model": "npi.quotequantity",
+  "pk": 1,
+  "fields": {
+    "quantity": 5.0,
+    "project": 1
+  }
+},
+{
+  "model": "npi.quotequantity",
+  "pk": 2,
+  "fields": {
+    "quantity": 50.0,
+    "project": 1
+  }
+},
+{
+  "model": "npi.quotequantity",
+  "pk": 3,
+  "fields": {
+    "quantity": 500.0,
+    "project": 1
+  }
+},
+{
+  "model": "npi.parent",
+  "pk": 1,
+  "fields": {
+    "project": 1,
+    "name": "RA056E1285",
+    "description": "Common Ring PCB Rev1",
+    "quantity": 1.0,
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "procure_method": "make_to_order",
+    "routing_name": "PCBA1",
+    "routing_id": 36,
+    "hscomcode": "",
+    "eccn": "",
+    "product_id": 12420,
+    "bom_uploaded": false
+  }
+},
+{
+  "model": "npi.parent",
+  "pk": 2,
+  "fields": {
+    "project": 1,
+    "name": "RATestCable",
+    "description": "Testing Cable",
+    "quantity": 5.6,
+    "uom_id": 7,
+    "uom_name": "m",
+    "procure_method": "make_to_order",
+    "routing_name": "B1F1S0A",
+    "routing_id": 1,
+    "hscomcode": "1234567890",
+    "eccn": "TESTECCN",
+    "product_id": 12419,
+    "bom_uploaded": false
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 1,
+  "fields": {
+    "project": 1,
+    "mpn": "C0603C104K5RACTU",
+    "manufacturer": "KEMET",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 7453,
+    "product_code": "CPC0603C104K5RACTU"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 2,
+  "fields": {
+    "project": 1,
+    "mpn": "EEEFK1H101P",
+    "manufacturer": "Panasonic",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Polarized Capacitor (SMD Case style F)",
+    "msl": null,
+    "product_id": 6063,
+    "product_code": "CPEEEFK1H101P"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 3,
+  "fields": {
+    "project": 1,
+    "mpn": "GRM31CR61H106KA12L",
+    "manufacturer": "MURATA",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 11782,
+    "product_code": "CPGRM31CR61H106KA12L"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 4,
+  "fields": {
+    "project": 1,
+    "mpn": "VJ0603D5R6CXPAJ",
+    "manufacturer": "VISHAY",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12367,
+    "product_code": "CM1800187"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 5,
+  "fields": {
+    "project": 1,
+    "mpn": "C0603C100J5GACTU",
+    "manufacturer": "KEMET",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 7676,
+    "product_code": "CPC0603C100J5GACTU"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 6,
+  "fields": {
+    "project": 1,
+    "mpn": "C0603C104K5RAC7867",
+    "manufacturer": "KEMET",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12365,
+    "product_code": "CM1800185"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 7,
+  "fields": {
+    "project": 1,
+    "mpn": "C0603C222K5RACTU",
+    "manufacturer": "KEMET",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12370,
+    "product_code": "CM1800190"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 8,
+  "fields": {
+    "project": 1,
+    "mpn": "06033C104JAT2A",
+    "manufacturer": "AVX",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12368,
+    "product_code": "CM1800188"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 9,
+  "fields": {
+    "project": 1,
+    "mpn": "06033C474KAT2A",
+    "manufacturer": "AVX",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12369,
+    "product_code": "CM1800189"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 10,
+  "fields": {
+    "project": 1,
+    "mpn": "06033C224KAT2A",
+    "manufacturer": "AVX",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12343,
+    "product_code": "CM1800163"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 11,
+  "fields": {
+    "project": 1,
+    "mpn": "06035C473KAT2A",
+    "manufacturer": "AVX",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 12342,
+    "product_code": "CM1800162"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 12,
+  "fields": {
+    "project": 1,
+    "mpn": "GRM188R71E224KA88D",
+    "manufacturer": "MURATA",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Capacitor",
+    "msl": null,
+    "product_id": 7890,
+    "product_code": "CPGRM188R71E224KA88D"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 13,
+  "fields": {
+    "project": 1,
+    "mpn": "MCL-S270GC",
+    "manufacturer": "MULTICOMP",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Green LED",
+    "msl": null,
+    "product_id": 11721,
+    "product_code": "CPMCL-S270GC"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 14,
+  "fields": {
+    "project": 1,
+    "mpn": "HSME-C191",
+    "manufacturer": "BROADCOM LIMITED",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Green LED",
+    "msl": null,
+    "product_id": 12399,
+    "product_code": "CM1800217"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 15,
+  "fields": {
+    "project": 1,
+    "mpn": "B340A-13-F",
+    "manufacturer": "Diodes, Inc.",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Schottky Diode",
+    "msl": null,
+    "product_id": 7946,
+    "product_code": "CPB340A-13-F"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 16,
+  "fields": {
+    "project": 1,
+    "mpn": "OVS-0803",
+    "manufacturer": "MULTICOMP",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Blue LED",
+    "msl": null,
+    "product_id": 9644,
+    "product_code": "CPOVS-0803"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 17,
+  "fields": {
+    "project": 1,
+    "mpn": "OVS-0808",
+    "manufacturer": "MULTICOMP",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Red LED",
+    "msl": null,
+    "product_id": 9645,
+    "product_code": "CPOVS-0808"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 18,
+  "fields": {
+    "project": 1,
+    "mpn": "MCL-S290YC",
+    "manufacturer": "MULTICOMP",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Amber LED",
+    "msl": null,
+    "product_id": 12337,
+    "product_code": "CM1800157"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 19,
+  "fields": {
+    "project": 1,
+    "mpn": "BAT46ZFILM",
+    "manufacturer": "STMICROELECTRONICS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Small signal Schottky diode, 1V,150mA",
+    "msl": null,
+    "product_id": 12336,
+    "product_code": "CM1800156"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 20,
+  "fields": {
+    "project": 1,
+    "mpn": "0154007.DR",
+    "manufacturer": "Littelfuse",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Fuse",
+    "msl": null,
+    "product_id": 12400,
+    "product_code": "CM1800218"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 21,
+  "fields": {
+    "project": 1,
+    "mpn": "0154001.DRT",
+    "manufacturer": "Littelfuse",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Fuse",
+    "msl": null,
+    "product_id": 9673,
+    "product_code": "CPR154001T"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 22,
+  "fields": {
+    "project": 1,
+    "mpn": "09.03201.02",
+    "manufacturer": "EOZ",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Slide Switch, 3-Pin",
+    "msl": null,
+    "product_id": 7896,
+    "product_code": "CP09.03201.02"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 23,
+  "fields": {
+    "project": 1,
+    "mpn": "SDR0805-5R6ML",
+    "manufacturer": "BOURNS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Inductor",
+    "msl": null,
+    "product_id": 12371,
+    "product_code": "CM1800191"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 24,
+  "fields": {
+    "project": 1,
+    "mpn": "BMB2A0600BN3",
+    "manufacturer": "TE CONNECTIVITY",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Ferrite Bead",
+    "msl": null,
+    "product_id": 7471,
+    "product_code": "CPBMB2A0600BN3"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 25,
+  "fields": {
+    "project": 1,
+    "mpn": "SL 3.5/2/90G",
+    "manufacturer": "WEIDMULLER",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Connector, Right Angle, 3.5 mm, 2 Contacts",
+    "msl": null,
+    "product_id": 7857,
+    "product_code": "CPSL3.5/2/90G"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 26,
+  "fields": {
+    "project": 1,
+    "mpn": "EHF-110-01-L-D",
+    "manufacturer": "Samtec",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Header, 20-Pin, Dual row",
+    "msl": null,
+    "product_id": 12418,
+    "product_code": "CM1800236"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 27,
+  "fields": {
+    "project": 1,
+    "mpn": "B5B-PH-K-S(LF)(SN)",
+    "manufacturer": "JST",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "PH Connector",
+    "msl": null,
+    "product_id": 6283,
+    "product_code": "CPB5B-PH-K-S"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 28,
+  "fields": {
+    "project": 1,
+    "mpn": "B4B-PH-K-S(LF)(SN)",
+    "manufacturer": "JST",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "4 Way PH Connector, PH Connector - Home Sensor, PH Connector - Home Sensor, PH Connector - Home Sensor",
+    "msl": null,
+    "product_id": 12397,
+    "product_code": "CM1800215"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 29,
+  "fields": {
+    "project": 1,
+    "mpn": "S2B-EH(LF)(SN)",
+    "manufacturer": "JST",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "R/A connector",
+    "msl": null,
+    "product_id": 12417,
+    "product_code": "CM1800235"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 30,
+  "fields": {
+    "project": 1,
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "manufacturer": "JST",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "PH Connector - DC Axial Fan, 2mm, PH Connector - Laser Transceiver, PH Connector - Laser Transceiver, PH Connector - Laser Transceiver",
+    "msl": null,
+    "product_id": 6095,
+    "product_code": "CPB3B-PH-K-S"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 31,
+  "fields": {
+    "project": 1,
+    "mpn": "B6B-PH-K-S(LF)(SN)",
+    "manufacturer": "JST",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "PH Connector - R4-EM-R12-161 Electronic Rotary Latch",
+    "msl": null,
+    "product_id": 12406,
+    "product_code": "CM1800224"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 32,
+  "fields": {
+    "project": 1,
+    "mpn": "B3S-1000",
+    "manufacturer": "OMRON",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Tactile Switch",
+    "msl": null,
+    "product_id": 12416,
+    "product_code": "CM1800234"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 33,
+  "fields": {
+    "project": 1,
+    "mpn": "IRLML6402PBF",
+    "manufacturer": "International Rectifier",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "P-Channel MOSFET",
+    "msl": null,
+    "product_id": 11681,
+    "product_code": "CPIRLML6402PBF"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 34,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJP03F1691V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12403,
+    "product_code": "CM1800221"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 35,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F2200V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12398,
+    "product_code": "CM1800216"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 36,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F91R0V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12401,
+    "product_code": "CM1800219"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 37,
+  "fields": {
+    "project": 1,
+    "mpn": "CRE2512-FZ-R005E-3",
+    "manufacturer": "BOURNS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 11981,
+    "product_code": "CPCRE2512-FZ-R005E-3"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 38,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F1002V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7902,
+    "product_code": "CPERJPA3F1002V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 39,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJP03F1003V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7907,
+    "product_code": "CPERJP03F1003V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 40,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJ3GEY0R00V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7917,
+    "product_code": "CPERJ3GEY0R00V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 41,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJ3GEYJ4R7V",
+    "manufacturer": "PANASONIC ELECTRONIC COMPONENTS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 11984,
+    "product_code": "CPERJ3GEYJ4R7V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 42,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F2202V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": 3,
+    "product_id": 7908,
+    "product_code": "CPERJPA3F2202V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 43,
+  "fields": {
+    "project": 1,
+    "mpn": "MCWR06X56R0FTL",
+    "manufacturer": "MULTICOMP",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 11983,
+    "product_code": "CPMCWR06X56R0FTL"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 44,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJ03F3300V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7910,
+    "product_code": "CPERJ03F3300V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 45,
+  "fields": {
+    "project": 1,
+    "mpn": "CRCW06031M00FKEA",
+    "manufacturer": "VISHAY DRALORIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12392,
+    "product_code": "CM1800210"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 46,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F59R0V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12393,
+    "product_code": "CM1800211"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 47,
+  "fields": {
+    "project": 1,
+    "mpn": "MCWR06X68R0FTL",
+    "manufacturer": "MULTICOMP",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 11982,
+    "product_code": "CPMCWR06X68R0FTL"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 48,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJP03F1370V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12394,
+    "product_code": "CM1800212"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 49,
+  "fields": {
+    "project": 1,
+    "mpn": "RLP73K3AR10FTDF",
+    "manufacturer": "TE CONNECTIVITY",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "0.1R, Ipeak=10A",
+    "msl": null,
+    "product_id": 12378,
+    "product_code": "CM1800198"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 50,
+  "fields": {
+    "project": 1,
+    "mpn": "ERA3ARB913V",
+    "manufacturer": "Panasonic",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12395,
+    "product_code": "CM1800213"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 51,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPB3B1602V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12396,
+    "product_code": "CM1800214"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 52,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F3902V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7926,
+    "product_code": "CPERJPA3F3902V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 53,
+  "fields": {
+    "project": 1,
+    "mpn": "ERA3AEB104V",
+    "manufacturer": "Panasonic",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12391,
+    "product_code": "CM1800209"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 54,
+  "fields": {
+    "project": 1,
+    "mpn": "PNM0805E5001BST1",
+    "manufacturer": "Vishay",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 11980,
+    "product_code": "CPPNM0805E5001BST1"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 55,
+  "fields": {
+    "project": 1,
+    "mpn": "ERA6AEB103V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12404,
+    "product_code": "CM1800222"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 56,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJ3GEYJ431V",
+    "manufacturer": "Panasonic",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12415,
+    "product_code": "CM1800233"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 57,
+  "fields": {
+    "project": 1,
+    "mpn": "ERA3AEB222V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7921,
+    "product_code": "CPERA3AEB222V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 58,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJ3GEYJ221V",
+    "manufacturer": "Panasonic",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12405,
+    "product_code": "CM1800223"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 59,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F1001V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7495,
+    "product_code": "CPERJPA3F1001V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 60,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJPA3F4301V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12413,
+    "product_code": "CM1800231"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 61,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJP03F3300V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 9935,
+    "product_code": "ERJP03F3300V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 62,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJ3GEYJ100V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 7933,
+    "product_code": "CPERJ3GEYJ100V"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 63,
+  "fields": {
+    "project": 1,
+    "mpn": "ERJP06F2401V",
+    "manufacturer": "PANASONIC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Resistor",
+    "msl": null,
+    "product_id": 12402,
+    "product_code": "CM1800220"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 64,
+  "fields": {
+    "project": 1,
+    "mpn": "S1751-46R",
+    "manufacturer": "HARWIN",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Test Point",
+    "msl": 3,
+    "product_id": 7496,
+    "product_code": "CPS1751-46R"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 65,
+  "fields": {
+    "project": 1,
+    "mpn": "TSC1031IPT",
+    "manufacturer": "STMicroelectronics",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "TSC1031 High-side current sense amplifier",
+    "msl": null,
+    "product_id": 11986,
+    "product_code": "CPTSC1031IPT"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 66,
+  "fields": {
+    "project": 1,
+    "mpn": "TSR 2-2450",
+    "manufacturer": "TRACO",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "V REG +5V",
+    "msl": null,
+    "product_id": 12375,
+    "product_code": "CM1800195"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 67,
+  "fields": {
+    "project": 1,
+    "mpn": "TSR 2-2433",
+    "manufacturer": "TRACO",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "V REG +3.3V",
+    "msl": null,
+    "product_id": 11987,
+    "product_code": "CPTSR2-2433"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 68,
+  "fields": {
+    "project": 1,
+    "mpn": "STM32F103VGT6",
+    "manufacturer": "ST Microelectronics",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "STM32F103VGT6 -  ARM 100 Pin Microcontroller",
+    "msl": null,
+    "product_id": 7449,
+    "product_code": "CPSTM32F103VGT6"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 69,
+  "fields": {
+    "project": 1,
+    "mpn": "ST3241EBPR",
+    "manufacturer": "ST Microelectronics",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "TRANS RS232 5.5V 400KBPS 28-SSOP",
+    "msl": null,
+    "product_id": 6130,
+    "product_code": "CPST3241EBPR"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 70,
+  "fields": {
+    "project": 1,
+    "mpn": "POWERSTEP01",
+    "manufacturer": "STMICROELECTRONICS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Powerstep Motor Driver IC",
+    "msl": null,
+    "product_id": 12355,
+    "product_code": "CM1800175"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 71,
+  "fields": {
+    "project": 1,
+    "mpn": "BAV99/8",
+    "manufacturer": "NEXPERIA",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Small Signal Diode",
+    "msl": null,
+    "product_id": 12414,
+    "product_code": "CM1800232"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 72,
+  "fields": {
+    "project": 1,
+    "mpn": "ADG1604BRUZ",
+    "manufacturer": "Analog Devices",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "1 Ohm Typical On Resistance, +/-5 V, +12 V, +5 V and +3.3 V, 4:1 Multiplexer, 0.95 Ohm Ron, 14-pin SOP (RU-14), Tube",
+    "msl": null,
+    "product_id": 12350,
+    "product_code": "CM1800170"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 73,
+  "fields": {
+    "project": 1,
+    "mpn": "REF200AU",
+    "manufacturer": "Texas Instruments",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "current source",
+    "msl": null,
+    "product_id": 8310,
+    "product_code": "CPREF200AU"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 74,
+  "fields": {
+    "project": 1,
+    "mpn": "AD8615AUJZ",
+    "manufacturer": "Analog Devices",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Low Cost, 250 mA Output Single-Supply Amplifier",
+    "msl": null,
+    "product_id": 7389,
+    "product_code": "CPAD8615AUJZ"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 75,
+  "fields": {
+    "project": 1,
+    "mpn": "HIH6030-021-001",
+    "manufacturer": "Honeywell",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "HIH6030-021-001 Humidity Sensor",
+    "msl": null,
+    "product_id": 7936,
+    "product_code": "CPHIH6030-021-001"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 76,
+  "fields": {
+    "project": 1,
+    "mpn": "ACPL-247-500E",
+    "manufacturer": "BROADCOM",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "ACPL-247 Optocoupler",
+    "msl": null,
+    "product_id": 12412,
+    "product_code": "CM1800230"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 77,
+  "fields": {
+    "project": 1,
+    "mpn": "X32K768S021",
+    "manufacturer": "AEL CRYSTALS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Crystal Oscillator",
+    "msl": null,
+    "product_id": 12411,
+    "product_code": "CM1800229"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 78,
+  "fields": {
+    "project": 1,
+    "mpn": "LF A140E",
+    "manufacturer": "IQD FREQUENCY PRODUCTS",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Crystal Oscillator",
+    "msl": null,
+    "product_id": 6128,
+    "product_code": "CPLFA140E"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 79,
+  "fields": {
+    "project": 1,
+    "mpn": "056E1285PCB",
+    "manufacturer": "Eurocircuits",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Insert Bare Board Description",
+    "msl": null,
+    "product_id": 12410,
+    "product_code": "CM1800228"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 80,
+  "fields": {
+    "project": 1,
+    "mpn": "50017135",
+    "manufacturer": "AVX",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "Switch",
+    "msl": 2,
+    "product_id": 12409,
+    "product_code": "CM1800227"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 81,
+  "fields": {
+    "project": 1,
+    "mpn": "50017136",
+    "manufacturer": "AVX",
+    "uom_id": 7,
+    "uom_name": "m",
+    "description": "Cable",
+    "msl": null,
+    "product_id": 12408,
+    "product_code": "CM1800226"
+  }
+},
+{
+  "model": "npi.component",
+  "pk": 82,
+  "fields": {
+    "project": 1,
+    "mpn": "50017137",
+    "manufacturer": "AVX",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "description": "RJ45",
+    "msl": null,
+    "product_id": 12407,
+    "product_code": "CM1800225"
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 1,
+  "fields": {
+    "designator": "C1",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 2,
+  "fields": {
+    "designator": "C7",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 3,
+  "fields": {
+    "designator": "C9",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 4,
+  "fields": {
+    "designator": "C17",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 5,
+  "fields": {
+    "designator": "C20",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 6,
+  "fields": {
+    "designator": "C28",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 7,
+  "fields": {
+    "designator": "C29",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 8,
+  "fields": {
+    "designator": "C30",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 9,
+  "fields": {
+    "designator": "C32",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 10,
+  "fields": {
+    "designator": "C33",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 11,
+  "fields": {
+    "designator": "C34",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 12,
+  "fields": {
+    "designator": "C36",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 13,
+  "fields": {
+    "designator": "C58",
+    "component": 1
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 14,
+  "fields": {
+    "designator": "C6",
+    "component": 2
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 15,
+  "fields": {
+    "designator": "C8",
+    "component": 2
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 16,
+  "fields": {
+    "designator": "C16",
+    "component": 2
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 17,
+  "fields": {
+    "designator": "C10",
+    "component": 3
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 18,
+  "fields": {
+    "designator": "C11",
+    "component": 3
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 19,
+  "fields": {
+    "designator": "C12",
+    "component": 3
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 20,
+  "fields": {
+    "designator": "C13",
+    "component": 3
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 21,
+  "fields": {
+    "designator": "C14",
+    "component": 3
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 22,
+  "fields": {
+    "designator": "C15",
+    "component": 3
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 23,
+  "fields": {
+    "designator": "C18",
+    "component": 4
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 24,
+  "fields": {
+    "designator": "C19",
+    "component": 4
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 25,
+  "fields": {
+    "designator": "C21",
+    "component": 5
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 26,
+  "fields": {
+    "designator": "C22",
+    "component": 5
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 27,
+  "fields": {
+    "designator": "C23",
+    "component": 6
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 28,
+  "fields": {
+    "designator": "C24",
+    "component": 6
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 29,
+  "fields": {
+    "designator": "C25",
+    "component": 6
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 30,
+  "fields": {
+    "designator": "C26",
+    "component": 6
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 31,
+  "fields": {
+    "designator": "C27",
+    "component": 6
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 32,
+  "fields": {
+    "designator": "C31",
+    "component": 7
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 33,
+  "fields": {
+    "designator": "C35",
+    "component": 7
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 34,
+  "fields": {
+    "designator": "C37",
+    "component": 7
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 35,
+  "fields": {
+    "designator": "C38",
+    "component": 7
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 36,
+  "fields": {
+    "designator": "C39",
+    "component": 8
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 37,
+  "fields": {
+    "designator": "C40",
+    "component": 8
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 38,
+  "fields": {
+    "designator": "C41",
+    "component": 8
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 39,
+  "fields": {
+    "designator": "C42",
+    "component": 8
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 40,
+  "fields": {
+    "designator": "C46",
+    "component": 8
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 41,
+  "fields": {
+    "designator": "C48",
+    "component": 8
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 42,
+  "fields": {
+    "designator": "C43",
+    "component": 9
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 43,
+  "fields": {
+    "designator": "C47",
+    "component": 9
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 44,
+  "fields": {
+    "designator": "C44",
+    "component": 10
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 45,
+  "fields": {
+    "designator": "C45",
+    "component": 11
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 46,
+  "fields": {
+    "designator": "C57",
+    "component": 12
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 47,
+  "fields": {
+    "designator": "D1",
+    "component": 13
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 48,
+  "fields": {
+    "designator": "D2",
+    "component": 14
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 49,
+  "fields": {
+    "designator": "D3",
+    "component": 14
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 50,
+  "fields": {
+    "designator": "D6",
+    "component": 14
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 51,
+  "fields": {
+    "designator": "D8",
+    "component": 14
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 52,
+  "fields": {
+    "designator": "D4",
+    "component": 15
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 53,
+  "fields": {
+    "designator": "D5",
+    "component": 16
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 54,
+  "fields": {
+    "designator": "D7",
+    "component": 17
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 55,
+  "fields": {
+    "designator": "D9",
+    "component": 18
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 56,
+  "fields": {
+    "designator": "D10",
+    "component": 18
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 57,
+  "fields": {
+    "designator": "D11",
+    "component": 19
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 58,
+  "fields": {
+    "designator": "F1",
+    "component": 20
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 59,
+  "fields": {
+    "designator": "F2",
+    "component": 21
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 60,
+  "fields": {
+    "designator": "F3",
+    "component": 21
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 61,
+  "fields": {
+    "designator": "JP1",
+    "component": 22
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 62,
+  "fields": {
+    "designator": "L1",
+    "component": 23
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 63,
+  "fields": {
+    "designator": "L2",
+    "component": 23
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 64,
+  "fields": {
+    "designator": "L3",
+    "component": 24
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 65,
+  "fields": {
+    "designator": "L4",
+    "component": 24
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 66,
+  "fields": {
+    "designator": "L5",
+    "component": 24
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 67,
+  "fields": {
+    "designator": "L6",
+    "component": 24
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 68,
+  "fields": {
+    "designator": "P1",
+    "component": 25
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 69,
+  "fields": {
+    "designator": "P3",
+    "component": 26
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 70,
+  "fields": {
+    "designator": "P4",
+    "component": 27
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 71,
+  "fields": {
+    "designator": "P5",
+    "component": 28
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 72,
+  "fields": {
+    "designator": "P8",
+    "component": 28
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 73,
+  "fields": {
+    "designator": "P9",
+    "component": 28
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 74,
+  "fields": {
+    "designator": "P10",
+    "component": 28
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 75,
+  "fields": {
+    "designator": "P6",
+    "component": 29
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 76,
+  "fields": {
+    "designator": "P7",
+    "component": 29
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 77,
+  "fields": {
+    "designator": "P11",
+    "component": 30
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 78,
+  "fields": {
+    "designator": "P13",
+    "component": 30
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 79,
+  "fields": {
+    "designator": "P14",
+    "component": 30
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 80,
+  "fields": {
+    "designator": "P15",
+    "component": 30
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 81,
+  "fields": {
+    "designator": "P12",
+    "component": 31
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 82,
+  "fields": {
+    "designator": "Push  Button1",
+    "component": 32
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 83,
+  "fields": {
+    "designator": "S1",
+    "component": 32
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 84,
+  "fields": {
+    "designator": "Q1",
+    "component": 33
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 85,
+  "fields": {
+    "designator": "Q2",
+    "component": 33
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 86,
+  "fields": {
+    "designator": "Q3",
+    "component": 33
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 87,
+  "fields": {
+    "designator": "R1",
+    "component": 34
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 88,
+  "fields": {
+    "designator": "R2",
+    "component": 35
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 89,
+  "fields": {
+    "designator": "R11",
+    "component": 35
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 90,
+  "fields": {
+    "designator": "R3",
+    "component": 36
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 91,
+  "fields": {
+    "designator": "R4",
+    "component": 37
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 92,
+  "fields": {
+    "designator": "R5",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 93,
+  "fields": {
+    "designator": "R12",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 94,
+  "fields": {
+    "designator": "R22",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 95,
+  "fields": {
+    "designator": "R24",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 96,
+  "fields": {
+    "designator": "R52",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 97,
+  "fields": {
+    "designator": "R63",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 98,
+  "fields": {
+    "designator": "R64",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 99,
+  "fields": {
+    "designator": "R66",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 100,
+  "fields": {
+    "designator": "R68",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 101,
+  "fields": {
+    "designator": "R70",
+    "component": 38
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 102,
+  "fields": {
+    "designator": "R6",
+    "component": 39
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 103,
+  "fields": {
+    "designator": "R8",
+    "component": 39
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 104,
+  "fields": {
+    "designator": "R15",
+    "component": 39
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 105,
+  "fields": {
+    "designator": "R21",
+    "component": 39
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 106,
+  "fields": {
+    "designator": "R46",
+    "component": 39
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 107,
+  "fields": {
+    "designator": "R62",
+    "component": 39
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 108,
+  "fields": {
+    "designator": "R7",
+    "component": 40
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 109,
+  "fields": {
+    "designator": "R9",
+    "component": 40
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 110,
+  "fields": {
+    "designator": "R10",
+    "component": 41
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 111,
+  "fields": {
+    "designator": "R13",
+    "component": 42
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 112,
+  "fields": {
+    "designator": "R14",
+    "component": 43
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 113,
+  "fields": {
+    "designator": "R16",
+    "component": 44
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 114,
+  "fields": {
+    "designator": "R18",
+    "component": 44
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 115,
+  "fields": {
+    "designator": "R19",
+    "component": 44
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 116,
+  "fields": {
+    "designator": "R20",
+    "component": 44
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 117,
+  "fields": {
+    "designator": "R51",
+    "component": 44
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 118,
+  "fields": {
+    "designator": "R17",
+    "component": 45
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 119,
+  "fields": {
+    "designator": "R23",
+    "component": 46
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 120,
+  "fields": {
+    "designator": "R25",
+    "component": 47
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 121,
+  "fields": {
+    "designator": "R26",
+    "component": 48
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 122,
+  "fields": {
+    "designator": "R27",
+    "component": 49
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 123,
+  "fields": {
+    "designator": "R28",
+    "component": 49
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 124,
+  "fields": {
+    "designator": "R29",
+    "component": 50
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 125,
+  "fields": {
+    "designator": "R30",
+    "component": 51
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 126,
+  "fields": {
+    "designator": "R31",
+    "component": 52
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 127,
+  "fields": {
+    "designator": "R32",
+    "component": 52
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 128,
+  "fields": {
+    "designator": "R33",
+    "component": 53
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 129,
+  "fields": {
+    "designator": "R34",
+    "component": 53
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 130,
+  "fields": {
+    "designator": "R35",
+    "component": 53
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 131,
+  "fields": {
+    "designator": "R36",
+    "component": 54
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 132,
+  "fields": {
+    "designator": "R37",
+    "component": 55
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 133,
+  "fields": {
+    "designator": "R38",
+    "component": 56
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 134,
+  "fields": {
+    "designator": "R42",
+    "component": 56
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 135,
+  "fields": {
+    "designator": "R43",
+    "component": 56
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 136,
+  "fields": {
+    "designator": "R45",
+    "component": 56
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 137,
+  "fields": {
+    "designator": "R53",
+    "component": 56
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 138,
+  "fields": {
+    "designator": "R56",
+    "component": 56
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 139,
+  "fields": {
+    "designator": "R39",
+    "component": 57
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 140,
+  "fields": {
+    "designator": "R40",
+    "component": 57
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 141,
+  "fields": {
+    "designator": "R41",
+    "component": 58
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 142,
+  "fields": {
+    "designator": "R44",
+    "component": 58
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 143,
+  "fields": {
+    "designator": "R54",
+    "component": 58
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 144,
+  "fields": {
+    "designator": "R47",
+    "component": 59
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 145,
+  "fields": {
+    "designator": "R59",
+    "component": 59
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 146,
+  "fields": {
+    "designator": "R60",
+    "component": 59
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 147,
+  "fields": {
+    "designator": "R61",
+    "component": 59
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 148,
+  "fields": {
+    "designator": "R48",
+    "component": 60
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 149,
+  "fields": {
+    "designator": "R49",
+    "component": 60
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 150,
+  "fields": {
+    "designator": "R50",
+    "component": 60
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 151,
+  "fields": {
+    "designator": "R55",
+    "component": 61
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 152,
+  "fields": {
+    "designator": "R58",
+    "component": 61
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 153,
+  "fields": {
+    "designator": "R57",
+    "component": 62
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 154,
+  "fields": {
+    "designator": "R65",
+    "component": 63
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 155,
+  "fields": {
+    "designator": "R67",
+    "component": 63
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 156,
+  "fields": {
+    "designator": "R69",
+    "component": 63
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 157,
+  "fields": {
+    "designator": "TP1",
+    "component": 64
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 158,
+  "fields": {
+    "designator": "TP2",
+    "component": 64
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 159,
+  "fields": {
+    "designator": "TP3",
+    "component": 64
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 160,
+  "fields": {
+    "designator": "TP4",
+    "component": 64
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 161,
+  "fields": {
+    "designator": "U1",
+    "component": 65
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 162,
+  "fields": {
+    "designator": "U2",
+    "component": 66
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 163,
+  "fields": {
+    "designator": "U3",
+    "component": 67
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 164,
+  "fields": {
+    "designator": "U4",
+    "component": 68
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 165,
+  "fields": {
+    "designator": "U5",
+    "component": 69
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 166,
+  "fields": {
+    "designator": "U6",
+    "component": 70
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 167,
+  "fields": {
+    "designator": "U7",
+    "component": 71
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 168,
+  "fields": {
+    "designator": "U8",
+    "component": 72
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 169,
+  "fields": {
+    "designator": "U9",
+    "component": 73
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 170,
+  "fields": {
+    "designator": "U10",
+    "component": 74
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 171,
+  "fields": {
+    "designator": "U11",
+    "component": 75
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 172,
+  "fields": {
+    "designator": "U12",
+    "component": 76
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 173,
+  "fields": {
+    "designator": "U13",
+    "component": 76
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 174,
+  "fields": {
+    "designator": "Y1",
+    "component": 77
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 175,
+  "fields": {
+    "designator": "Y2",
+    "component": 78
+  }
+},
+{
+  "model": "npi.designator",
+  "pk": 176,
+  "fields": {
+    "designator": "Bare Board",
+    "component": 79
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 1,
+  "fields": {
+    "parent": 1,
+    "component": 1,
+    "quantity": 13.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 2,
+  "fields": {
+    "parent": 1,
+    "component": 2,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 3,
+  "fields": {
+    "parent": 1,
+    "component": 3,
+    "quantity": 6.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 4,
+  "fields": {
+    "parent": 1,
+    "component": 4,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 5,
+  "fields": {
+    "parent": 1,
+    "component": 5,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 6,
+  "fields": {
+    "parent": 1,
+    "component": 6,
+    "quantity": 5.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 7,
+  "fields": {
+    "parent": 1,
+    "component": 7,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 8,
+  "fields": {
+    "parent": 1,
+    "component": 8,
+    "quantity": 6.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 9,
+  "fields": {
+    "parent": 1,
+    "component": 9,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 10,
+  "fields": {
+    "parent": 1,
+    "component": 10,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 11,
+  "fields": {
+    "parent": 1,
+    "component": 11,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 12,
+  "fields": {
+    "parent": 1,
+    "component": 12,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 13,
+  "fields": {
+    "parent": 1,
+    "component": 13,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 14,
+  "fields": {
+    "parent": 1,
+    "component": 14,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 15,
+  "fields": {
+    "parent": 1,
+    "component": 15,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 16,
+  "fields": {
+    "parent": 1,
+    "component": 16,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 17,
+  "fields": {
+    "parent": 1,
+    "component": 17,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 18,
+  "fields": {
+    "parent": 1,
+    "component": 18,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 19,
+  "fields": {
+    "parent": 1,
+    "component": 19,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 20,
+  "fields": {
+    "parent": 1,
+    "component": 20,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 21,
+  "fields": {
+    "parent": 1,
+    "component": 21,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 22,
+  "fields": {
+    "parent": 1,
+    "component": 22,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 23,
+  "fields": {
+    "parent": 1,
+    "component": 23,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 24,
+  "fields": {
+    "parent": 1,
+    "component": 24,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 25,
+  "fields": {
+    "parent": 1,
+    "component": 25,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 26,
+  "fields": {
+    "parent": 1,
+    "component": 26,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 27,
+  "fields": {
+    "parent": 1,
+    "component": 27,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 28,
+  "fields": {
+    "parent": 1,
+    "component": 28,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 29,
+  "fields": {
+    "parent": 1,
+    "component": 29,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 30,
+  "fields": {
+    "parent": 1,
+    "component": 30,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 31,
+  "fields": {
+    "parent": 1,
+    "component": 31,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 32,
+  "fields": {
+    "parent": 1,
+    "component": 32,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 33,
+  "fields": {
+    "parent": 1,
+    "component": 33,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 34,
+  "fields": {
+    "parent": 1,
+    "component": 34,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 35,
+  "fields": {
+    "parent": 1,
+    "component": 35,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 36,
+  "fields": {
+    "parent": 1,
+    "component": 36,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 37,
+  "fields": {
+    "parent": 1,
+    "component": 37,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 38,
+  "fields": {
+    "parent": 1,
+    "component": 38,
+    "quantity": 10.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 39,
+  "fields": {
+    "parent": 1,
+    "component": 39,
+    "quantity": 6.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 40,
+  "fields": {
+    "parent": 1,
+    "component": 40,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 41,
+  "fields": {
+    "parent": 1,
+    "component": 41,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 42,
+  "fields": {
+    "parent": 1,
+    "component": 42,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 43,
+  "fields": {
+    "parent": 1,
+    "component": 43,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 44,
+  "fields": {
+    "parent": 1,
+    "component": 44,
+    "quantity": 5.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 45,
+  "fields": {
+    "parent": 1,
+    "component": 45,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 46,
+  "fields": {
+    "parent": 1,
+    "component": 46,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 47,
+  "fields": {
+    "parent": 1,
+    "component": 47,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 48,
+  "fields": {
+    "parent": 1,
+    "component": 48,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 49,
+  "fields": {
+    "parent": 1,
+    "component": 49,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 50,
+  "fields": {
+    "parent": 1,
+    "component": 50,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 51,
+  "fields": {
+    "parent": 1,
+    "component": 51,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 52,
+  "fields": {
+    "parent": 1,
+    "component": 52,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 53,
+  "fields": {
+    "parent": 1,
+    "component": 53,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 54,
+  "fields": {
+    "parent": 1,
+    "component": 54,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 55,
+  "fields": {
+    "parent": 1,
+    "component": 55,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 56,
+  "fields": {
+    "parent": 1,
+    "component": 56,
+    "quantity": 6.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 57,
+  "fields": {
+    "parent": 1,
+    "component": 57,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 58,
+  "fields": {
+    "parent": 1,
+    "component": 58,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 59,
+  "fields": {
+    "parent": 1,
+    "component": 59,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 60,
+  "fields": {
+    "parent": 1,
+    "component": 60,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 61,
+  "fields": {
+    "parent": 1,
+    "component": 61,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 62,
+  "fields": {
+    "parent": 1,
+    "component": 62,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 63,
+  "fields": {
+    "parent": 1,
+    "component": 63,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 64,
+  "fields": {
+    "parent": 1,
+    "component": 64,
+    "quantity": 4.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 65,
+  "fields": {
+    "parent": 1,
+    "component": 65,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 66,
+  "fields": {
+    "parent": 1,
+    "component": 66,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 67,
+  "fields": {
+    "parent": 1,
+    "component": 67,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 68,
+  "fields": {
+    "parent": 1,
+    "component": 68,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 69,
+  "fields": {
+    "parent": 1,
+    "component": 69,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 70,
+  "fields": {
+    "parent": 1,
+    "component": 70,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 71,
+  "fields": {
+    "parent": 1,
+    "component": 71,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 72,
+  "fields": {
+    "parent": 1,
+    "component": 72,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 73,
+  "fields": {
+    "parent": 1,
+    "component": 73,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 74,
+  "fields": {
+    "parent": 1,
+    "component": 74,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 75,
+  "fields": {
+    "parent": 1,
+    "component": 75,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 76,
+  "fields": {
+    "parent": 1,
+    "component": 76,
+    "quantity": 2.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 77,
+  "fields": {
+    "parent": 1,
+    "component": 77,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 78,
+  "fields": {
+    "parent": 1,
+    "component": 78,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 79,
+  "fields": {
+    "parent": 1,
+    "component": 79,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 80,
+  "fields": {
+    "parent": 2,
+    "component": 80,
+    "quantity": 3.0
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 81,
+  "fields": {
+    "parent": 2,
+    "component": 81,
+    "quantity": 5.6
+  }
+},
+{
+  "model": "npi.parentcomponent",
+  "pk": 82,
+  "fields": {
+    "parent": 2,
+    "component": 82,
+    "quantity": 1.0
+  }
+},
+{
+  "model": "npi.projectsupplier",
+  "pk": 1,
+  "fields": {
+    "project": 1,
+    "supplier_id": 420,
+    "supplier_name": "Farnell UK",
+    "uploaded": true,
+    "enabled": true
+  }
+},
+{
+  "model": "npi.projectsupplier",
+  "pk": 2,
+  "fields": {
+    "project": 1,
+    "supplier_id": 502,
+    "supplier_name": "Digi-Key",
+    "uploaded": true,
+    "enabled": true
+  }
+},
+{
+  "model": "npi.projectsupplier",
+  "pk": 3,
+  "fields": {
+    "project": 1,
+    "supplier_id": 346,
+    "supplier_name": "RS Components",
+    "uploaded": true,
+    "enabled": true
+  }
+},
+{
+  "model": "npi.projectsupplier",
+  "pk": 4,
+  "fields": {
+    "project": 1,
+    "supplier_id": 448,
+    "supplier_name": "Mouser Electronics",
+    "uploaded": true,
+    "enabled": true
+  }
+},
+{
+  "model": "npi.projectsupplier",
+  "pk": 5,
+  "fields": {
+    "project": 1,
+    "supplier_id": 1858,
+    "supplier_name": "Eurocircuits NV",
+    "uploaded": true,
+    "enabled": true
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 1,
+  "fields": {
+    "component": 38,
+    "project_supplier": 2,
+    "product_code": "Digikey1000001",
+    "description": "Digikey part 1000001",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F1002V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 2,
+  "fields": {
+    "component": 39,
+    "project_supplier": 2,
+    "product_code": "Digikey1000002",
+    "description": "Digikey part 1000002",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJP03F1003V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 3,
+  "fields": {
+    "component": 40,
+    "project_supplier": 2,
+    "product_code": "Digikey1000003",
+    "description": "Digikey part 1000003",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJ3GEY0R00V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1000.0,
+    "order_multiples": 1000.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 4,
+  "fields": {
+    "component": 41,
+    "project_supplier": 2,
+    "product_code": "Digikey1000004",
+    "description": "Digikey part 1000004",
+    "manufacturer": "PANASONIC ELECTRONIC COMPONENTS",
+    "mpn": "ERJ3GEYJ4R7V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 5,
+  "fields": {
+    "component": 50,
+    "project_supplier": 2,
+    "product_code": "Digikey1000006",
+    "description": "Digikey part 1000006",
+    "manufacturer": "Panasonic",
+    "mpn": "ERA3ARB913V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 6,
+  "fields": {
+    "component": 51,
+    "project_supplier": 2,
+    "product_code": "Digikey1000007",
+    "description": "Digikey part 1000007",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPB3B1602V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1000.0,
+    "order_multiples": 1000.0,
+    "current_stock": 2000.0,
+    "leadtime": 3,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 7,
+  "fields": {
+    "component": 52,
+    "project_supplier": 2,
+    "product_code": "Digikey1000008",
+    "description": "Digikey part 1000008",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F3902V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 8,
+  "fields": {
+    "component": 80,
+    "project_supplier": 2,
+    "product_code": "Digikey1000009",
+    "description": "Digikey part 1000009",
+    "manufacturer": "AVX",
+    "mpn": "50017135",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 10.0,
+    "order_multiples": 10.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 9,
+  "fields": {
+    "component": 81,
+    "project_supplier": 2,
+    "product_code": "Digikey1000010",
+    "description": "Digikey part 1000010",
+    "manufacturer": "AVX",
+    "mpn": "50017136",
+    "uom_id": 39,
+    "uom_name": "30m",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 10,
+  "fields": {
+    "component": 82,
+    "project_supplier": 2,
+    "product_code": "Digikey1000011",
+    "description": "Digikey part 1000011",
+    "manufacturer": "AVX",
+    "mpn": "50017137",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 20.0,
+    "order_multiples": 20.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 11,
+  "fields": {
+    "component": 79,
+    "project_supplier": 5,
+    "product_code": "056E1285PCB",
+    "description": "RA056E1285 PCB",
+    "manufacturer": "Eurocircuits",
+    "mpn": "056E1285PCB",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 12,
+  "fields": {
+    "component": 1,
+    "project_supplier": 1,
+    "product_code": "20181001",
+    "description": "Description 20181001",
+    "manufacturer": "KEMET",
+    "mpn": "C0603C104K5RACTU",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 13,
+  "fields": {
+    "component": 2,
+    "project_supplier": 1,
+    "product_code": "20181002",
+    "description": "Description 20181002",
+    "manufacturer": "Panasonic",
+    "mpn": "EEEFK1H101P",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": 1000.0,
+    "leadtime": 7,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 14,
+  "fields": {
+    "component": 3,
+    "project_supplier": 1,
+    "product_code": "20181003",
+    "description": "Description 20181003",
+    "manufacturer": "MURATA",
+    "mpn": "GRM31CR61H106KA12L",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 15,
+  "fields": {
+    "component": 4,
+    "project_supplier": 1,
+    "product_code": "20181004",
+    "description": "Description 20181004",
+    "manufacturer": "VISHAY",
+    "mpn": "VJ0603D5R6CXPAJ",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 16,
+  "fields": {
+    "component": 5,
+    "project_supplier": 1,
+    "product_code": "20181005",
+    "description": "Description 20181005",
+    "manufacturer": "KEMET",
+    "mpn": "C0603C100J5GACTU",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 17,
+  "fields": {
+    "component": 6,
+    "project_supplier": 1,
+    "product_code": "20181006",
+    "description": "Description 20181006",
+    "manufacturer": "KEMET",
+    "mpn": "C0603C104K5RAC7867",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 18,
+  "fields": {
+    "component": 7,
+    "project_supplier": 1,
+    "product_code": "20181007",
+    "description": "Description 20181007",
+    "manufacturer": "KEMET",
+    "mpn": "C0603C222K5RACTU",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 19,
+  "fields": {
+    "component": 8,
+    "project_supplier": 1,
+    "product_code": "20181008",
+    "description": "Description 20181008",
+    "manufacturer": "AVX",
+    "mpn": "06033C104JAT2A",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 20,
+  "fields": {
+    "component": 9,
+    "project_supplier": 1,
+    "product_code": "20181009",
+    "description": "Description 20181009",
+    "manufacturer": "AVX",
+    "mpn": "06033C474KAT2A",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 21,
+  "fields": {
+    "component": 10,
+    "project_supplier": 1,
+    "product_code": "20181010",
+    "description": "Description 20181010",
+    "manufacturer": "AVX",
+    "mpn": "06033C224KAT2A",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 22,
+  "fields": {
+    "component": 11,
+    "project_supplier": 1,
+    "product_code": "20181011",
+    "description": "Description 20181011",
+    "manufacturer": "AVX",
+    "mpn": "06035C473KAT2A",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 23,
+  "fields": {
+    "component": 12,
+    "project_supplier": 1,
+    "product_code": "20181012",
+    "description": "Description 20181012",
+    "manufacturer": "MURATA",
+    "mpn": "GRM188R71E224KA88D",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 24,
+  "fields": {
+    "component": 13,
+    "project_supplier": 1,
+    "product_code": "20181013",
+    "description": "Description 20181013",
+    "manufacturer": "MULTICOMP",
+    "mpn": "MCL-S270GC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 15.0,
+    "order_multiples": 15.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 25,
+  "fields": {
+    "component": 15,
+    "project_supplier": 1,
+    "product_code": "20181014",
+    "description": "Description 20181014",
+    "manufacturer": "Diodes, Inc.",
+    "mpn": "B340A-13-F",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 26,
+  "fields": {
+    "component": 16,
+    "project_supplier": 1,
+    "product_code": "20181015",
+    "description": "Description 20181015",
+    "manufacturer": "MULTICOMP",
+    "mpn": "OVS-0803",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 27,
+  "fields": {
+    "component": 17,
+    "project_supplier": 1,
+    "product_code": "20181016",
+    "description": "Description 20181016",
+    "manufacturer": "MULTICOMP",
+    "mpn": "OVS-0808",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 28,
+  "fields": {
+    "component": 18,
+    "project_supplier": 1,
+    "product_code": "20181017",
+    "description": "Description 20181017",
+    "manufacturer": "MULTICOMP",
+    "mpn": "MCL-S290YC",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 29,
+  "fields": {
+    "component": 19,
+    "project_supplier": 1,
+    "product_code": "20181018",
+    "description": "Description 20181018",
+    "manufacturer": "STMICROELECTRONICS",
+    "mpn": "BAT46ZFILM",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 30,
+  "fields": {
+    "component": 20,
+    "project_supplier": 1,
+    "product_code": "20181019",
+    "description": "Description 20181019",
+    "manufacturer": "Littelfuse",
+    "mpn": "0154007.DR",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 31,
+  "fields": {
+    "component": 21,
+    "project_supplier": 1,
+    "product_code": "20181020",
+    "description": "Description 20181020",
+    "manufacturer": "Littelfuse",
+    "mpn": "0154001.DRT",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 32,
+  "fields": {
+    "component": 22,
+    "project_supplier": 1,
+    "product_code": "20181021",
+    "description": "Description 20181021",
+    "manufacturer": "EOZ",
+    "mpn": "09.03201.02",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 100.0,
+    "order_multiples": 100.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 33,
+  "fields": {
+    "component": 23,
+    "project_supplier": 1,
+    "product_code": "20181022",
+    "description": "Description 20181022",
+    "manufacturer": "BOURNS",
+    "mpn": "SDR0805-5R6ML",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 34,
+  "fields": {
+    "component": 24,
+    "project_supplier": 1,
+    "product_code": "20181023",
+    "description": "Description 20181023",
+    "manufacturer": "TE CONNECTIVITY",
+    "mpn": "BMB2A0600BN3",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 35,
+  "fields": {
+    "component": 25,
+    "project_supplier": 1,
+    "product_code": "20181024",
+    "description": "Description 20181024",
+    "manufacturer": "WEIDMULLER",
+    "mpn": "SL 3.5/2/90G",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 5000.0,
+    "order_multiples": 5000.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 36,
+  "fields": {
+    "component": 27,
+    "project_supplier": 1,
+    "product_code": "20181025",
+    "description": "Description 20181025",
+    "manufacturer": "JST",
+    "mpn": "B5B-PH-K-S(LF)(SN)",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 37,
+  "fields": {
+    "component": 28,
+    "project_supplier": 1,
+    "product_code": "20181026",
+    "description": "Description 20181026",
+    "manufacturer": "JST",
+    "mpn": "B4B-PH-K-S(LF)(SN)",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 38,
+  "fields": {
+    "component": 30,
+    "project_supplier": 1,
+    "product_code": "20181027",
+    "description": "Description 20181027",
+    "manufacturer": "JST",
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 39,
+  "fields": {
+    "component": 31,
+    "project_supplier": 1,
+    "product_code": "20181028",
+    "description": "Description 20181028",
+    "manufacturer": "JST",
+    "mpn": "B6B-PH-K-S(LF)(SN)",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 40,
+  "fields": {
+    "component": 32,
+    "project_supplier": 1,
+    "product_code": "20181029",
+    "description": "Description 20181029",
+    "manufacturer": "OMRON",
+    "mpn": "B3S-1000",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 41,
+  "fields": {
+    "component": 33,
+    "project_supplier": 1,
+    "product_code": "20181030",
+    "description": "Description 20181030",
+    "manufacturer": "International Rectifier",
+    "mpn": "IRLML6402PBF",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 42,
+  "fields": {
+    "component": 34,
+    "project_supplier": 1,
+    "product_code": "20181031",
+    "description": "Description 20181031",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJP03F1691V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 30.0,
+    "order_multiples": 30.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 43,
+  "fields": {
+    "component": 35,
+    "project_supplier": 1,
+    "product_code": "20181032",
+    "description": "Description 20181032",
+    "manufacturer": "ALTERNATIVE MANUFACTURER 1",
+    "mpn": "ALTERNATIVE MPN 1",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": true,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 44,
+  "fields": {
+    "component": 36,
+    "project_supplier": 1,
+    "product_code": "20181033",
+    "description": "Description 20181033",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F91R0V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 45,
+  "fields": {
+    "component": 37,
+    "project_supplier": 1,
+    "product_code": "20181034",
+    "description": "Description 20181034",
+    "manufacturer": "BOURNS",
+    "mpn": "CRE2512-FZ-R005E-3",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 46,
+  "fields": {
+    "component": 38,
+    "project_supplier": 1,
+    "product_code": "20181035",
+    "description": "Description 20181035",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F1002V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 47,
+  "fields": {
+    "component": 39,
+    "project_supplier": 1,
+    "product_code": "20181036",
+    "description": "Description 20181036",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJP03F1003V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 48,
+  "fields": {
+    "component": 40,
+    "project_supplier": 1,
+    "product_code": "20181037",
+    "description": "Description 20181037",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJ3GEY0R00V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 49,
+  "fields": {
+    "component": 41,
+    "project_supplier": 1,
+    "product_code": "20181038",
+    "description": "Description 20181038",
+    "manufacturer": "PANASONIC ELECTRONIC COMPONENTS",
+    "mpn": "ERJ3GEYJ4R7V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": 1500.0,
+    "leadtime": 9,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 50,
+  "fields": {
+    "component": 42,
+    "project_supplier": 1,
+    "product_code": "20181039",
+    "description": "Description 20181039",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F2202V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 51,
+  "fields": {
+    "component": 43,
+    "project_supplier": 1,
+    "product_code": "20181040",
+    "description": "Description 20181040",
+    "manufacturer": "MULTICOMP",
+    "mpn": "MCWR06X56R0FTL",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 52,
+  "fields": {
+    "component": 44,
+    "project_supplier": 1,
+    "product_code": "20181041",
+    "description": "Description 20181041",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJ03F3300V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 53,
+  "fields": {
+    "component": 45,
+    "project_supplier": 1,
+    "product_code": "20181042",
+    "description": "Description 20181042",
+    "manufacturer": "VISHAY DRALORIC",
+    "mpn": "CRCW06031M00FKEA",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 54,
+  "fields": {
+    "component": 46,
+    "project_supplier": 1,
+    "product_code": "20181043",
+    "description": "Description 20181043",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F59R0V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 55,
+  "fields": {
+    "component": 47,
+    "project_supplier": 1,
+    "product_code": "20181044",
+    "description": "Description 20181044",
+    "manufacturer": "MULTICOMP",
+    "mpn": "MCWR06X68R0FTL",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 56,
+  "fields": {
+    "component": 48,
+    "project_supplier": 1,
+    "product_code": "20181045",
+    "description": "Description 20181045",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJP03F1370V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 57,
+  "fields": {
+    "component": 49,
+    "project_supplier": 1,
+    "product_code": "20181046",
+    "description": "Description 20181046",
+    "manufacturer": "TE CONNECTIVITY",
+    "mpn": "RLP73K3AR10FTDF",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 15.0,
+    "order_multiples": 15.0,
+    "current_stock": null,
+    "leadtime": 5,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 58,
+  "fields": {
+    "component": 50,
+    "project_supplier": 1,
+    "product_code": "20181047",
+    "description": "Description 20181047",
+    "manufacturer": "Panasonic",
+    "mpn": "ERA3ARB913V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 59,
+  "fields": {
+    "component": 51,
+    "project_supplier": 1,
+    "product_code": "20181048",
+    "description": "Description 20181048",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPB3B1602V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 60,
+  "fields": {
+    "component": 52,
+    "project_supplier": 1,
+    "product_code": "20181049",
+    "description": "Description 20181049",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F3902V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 61,
+  "fields": {
+    "component": 53,
+    "project_supplier": 1,
+    "product_code": "20181050",
+    "description": "Description 20181050",
+    "manufacturer": "ALTERNATIVE MANUFACTURER 4",
+    "mpn": "ALTERNATIVE MPN 4",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": true,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 62,
+  "fields": {
+    "component": 54,
+    "project_supplier": 1,
+    "product_code": "20181051",
+    "description": "Description 20181051",
+    "manufacturer": "Vishay",
+    "mpn": "PNM0805E5001BST1",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 63,
+  "fields": {
+    "component": 55,
+    "project_supplier": 1,
+    "product_code": "20181052",
+    "description": "Description 20181052",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERA6AEB103V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 64,
+  "fields": {
+    "component": 56,
+    "project_supplier": 1,
+    "product_code": "20181053",
+    "description": "Description 20181053",
+    "manufacturer": "Panasonic",
+    "mpn": "ERJ3GEYJ431V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 65,
+  "fields": {
+    "component": 57,
+    "project_supplier": 1,
+    "product_code": "20181054",
+    "description": "Description 20181054",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERA3AEB222V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 100.0,
+    "order_multiples": 100.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 66,
+  "fields": {
+    "component": 58,
+    "project_supplier": 1,
+    "product_code": "20181055",
+    "description": "Description 20181055",
+    "manufacturer": "Panasonic",
+    "mpn": "ERJ3GEYJ221V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 67,
+  "fields": {
+    "component": 59,
+    "project_supplier": 1,
+    "product_code": "20181056",
+    "description": "Description 20181056",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F1001V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": 150000.0,
+    "leadtime": 12,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 68,
+  "fields": {
+    "component": 60,
+    "project_supplier": 1,
+    "product_code": "20181057",
+    "description": "Description 20181057",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJPA3F4301V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 69,
+  "fields": {
+    "component": 61,
+    "project_supplier": 1,
+    "product_code": "20181058",
+    "description": "Description 20181058",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJP03F3300V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 70,
+  "fields": {
+    "component": 62,
+    "project_supplier": 1,
+    "product_code": "20181059",
+    "description": "Description 20181059",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJ3GEYJ100V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 71,
+  "fields": {
+    "component": 63,
+    "project_supplier": 1,
+    "product_code": "20181060",
+    "description": "Description 20181060",
+    "manufacturer": "PANASONIC",
+    "mpn": "ERJP06F2401V",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 72,
+  "fields": {
+    "component": 64,
+    "project_supplier": 1,
+    "product_code": "20181061",
+    "description": "Description 20181061",
+    "manufacturer": "HARWIN",
+    "mpn": "S1751-46R",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 73,
+  "fields": {
+    "component": 65,
+    "project_supplier": 1,
+    "product_code": "20181062",
+    "description": "Description 20181062",
+    "manufacturer": "STMicroelectronics",
+    "mpn": "TSC1031IPT",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 74,
+  "fields": {
+    "component": 66,
+    "project_supplier": 1,
+    "product_code": "20181063",
+    "description": "Description 20181063",
+    "manufacturer": "TRACO",
+    "mpn": "TSR 2-2450",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 75,
+  "fields": {
+    "component": 67,
+    "project_supplier": 1,
+    "product_code": "20181064",
+    "description": "Description 20181064",
+    "manufacturer": "TRACO",
+    "mpn": "TSR 2-2433",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 76,
+  "fields": {
+    "component": 68,
+    "project_supplier": 1,
+    "product_code": "20181065",
+    "description": "Description 20181065",
+    "manufacturer": "ST Microelectronics",
+    "mpn": "STM32F103VGT6",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 77,
+  "fields": {
+    "component": 69,
+    "project_supplier": 1,
+    "product_code": "20181066",
+    "description": "Description 20181066",
+    "manufacturer": "ST Microelectronics",
+    "mpn": "ST3241EBPR",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 78,
+  "fields": {
+    "component": 70,
+    "project_supplier": 1,
+    "product_code": "20181067",
+    "description": "Description 20181067",
+    "manufacturer": "STMICROELECTRONICS",
+    "mpn": "POWERSTEP01",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 79,
+  "fields": {
+    "component": 71,
+    "project_supplier": 1,
+    "product_code": "20181068",
+    "description": "Description 20181068",
+    "manufacturer": "ALTERNATIVE MANUFACTURER 2",
+    "mpn": "ALTERNATIVE MPN 2",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": true,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 80,
+  "fields": {
+    "component": 72,
+    "project_supplier": 1,
+    "product_code": "20181069",
+    "description": "Description 20181069",
+    "manufacturer": "Analog Devices",
+    "mpn": "ADG1604BRUZ",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 15.0,
+    "order_multiples": 15.0,
+    "current_stock": 600.0,
+    "leadtime": 5,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 81,
+  "fields": {
+    "component": 73,
+    "project_supplier": 1,
+    "product_code": "20181070",
+    "description": "Description 20181070",
+    "manufacturer": "Texas Instruments",
+    "mpn": "REF200AU",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 82,
+  "fields": {
+    "component": 74,
+    "project_supplier": 1,
+    "product_code": "20181071",
+    "description": "Description 20181071",
+    "manufacturer": "Analog Devices",
+    "mpn": "AD8615AUJZ",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 83,
+  "fields": {
+    "component": 75,
+    "project_supplier": 1,
+    "product_code": "20181072",
+    "description": "Description 20181072",
+    "manufacturer": "Honeywell",
+    "mpn": "HIH6030-021-001",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 84,
+  "fields": {
+    "component": 76,
+    "project_supplier": 1,
+    "product_code": "20181073",
+    "description": "Description 20181073",
+    "manufacturer": "BROADCOM",
+    "mpn": "ACPL-247-500E",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 85,
+  "fields": {
+    "component": 77,
+    "project_supplier": 1,
+    "product_code": "20181074",
+    "description": "Description 20181074",
+    "manufacturer": "ALTERNATIVE MANUFACTURER 3",
+    "mpn": "ALTERNATIVE MPN 3",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": true,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 86,
+  "fields": {
+    "component": 78,
+    "project_supplier": 1,
+    "product_code": "20181075",
+    "description": "Description 20181075",
+    "manufacturer": "IQD FREQUENCY PRODUCTS",
+    "mpn": "LF A140E",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 87,
+  "fields": {
+    "component": 81,
+    "project_supplier": 1,
+    "product_code": "20181076",
+    "description": "Description 20181076",
+    "manufacturer": "AVX",
+    "mpn": "50017136",
+    "uom_id": 7,
+    "uom_name": "m",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 88,
+  "fields": {
+    "component": 26,
+    "project_supplier": 4,
+    "product_code": "ASDFG1010101",
+    "description": "Test",
+    "manufacturer": "Samtec",
+    "mpn": "EHF-110-01-L-D",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 10.0,
+    "order_multiples": 10.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": false,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 89,
+  "fields": {
+    "component": 14,
+    "project_supplier": 3,
+    "product_code": "RS123331",
+    "description": "RS Description 1",
+    "manufacturer": "RS Alternative 1",
+    "mpn": "RS Description 1",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": true,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.suppliercomponent",
+  "pk": 90,
+  "fields": {
+    "component": 29,
+    "project_supplier": 3,
+    "product_code": "RS123332",
+    "description": "RS Description 2",
+    "manufacturer": "RS Alternative 2",
+    "mpn": "RS Description 2",
+    "uom_id": 1,
+    "uom_name": "PCE",
+    "moq": 1.0,
+    "order_multiples": 1.0,
+    "current_stock": null,
+    "leadtime": null,
+    "sequence": 10,
+    "alternative": true,
+    "state": "normal"
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "quote_quantity": 3,
+    "price": 0.6,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "quote_quantity": 2,
+    "price": 0.8,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 3,
+  "fields": {
+    "product": 1,
+    "quote_quantity": 1,
+    "price": 1.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 4,
+  "fields": {
+    "product": 2,
+    "quote_quantity": 3,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 5,
+  "fields": {
+    "product": 2,
+    "quote_quantity": 2,
+    "price": 0.2,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 6,
+  "fields": {
+    "product": 2,
+    "quote_quantity": 1,
+    "price": 0.5,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 7,
+  "fields": {
+    "product": 3,
+    "quote_quantity": 3,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 8,
+  "fields": {
+    "product": 3,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 9,
+  "fields": {
+    "product": 3,
+    "quote_quantity": 1,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 10,
+  "fields": {
+    "product": 4,
+    "quote_quantity": 3,
+    "price": 0.6,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 11,
+  "fields": {
+    "product": 4,
+    "quote_quantity": 2,
+    "price": 0.8,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 12,
+  "fields": {
+    "product": 4,
+    "quote_quantity": 1,
+    "price": 1.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 13,
+  "fields": {
+    "product": 5,
+    "quote_quantity": 3,
+    "price": 0.6,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 14,
+  "fields": {
+    "product": 5,
+    "quote_quantity": 2,
+    "price": 0.8,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 15,
+  "fields": {
+    "product": 5,
+    "quote_quantity": 1,
+    "price": 1.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 16,
+  "fields": {
+    "product": 6,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 17,
+  "fields": {
+    "product": 6,
+    "quote_quantity": 2,
+    "price": 4.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 18,
+  "fields": {
+    "product": 6,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 19,
+  "fields": {
+    "product": 7,
+    "quote_quantity": 3,
+    "price": 1.5,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 20,
+  "fields": {
+    "product": 7,
+    "quote_quantity": 2,
+    "price": 2.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 21,
+  "fields": {
+    "product": 7,
+    "quote_quantity": 1,
+    "price": 2.4,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 22,
+  "fields": {
+    "product": 8,
+    "quote_quantity": 3,
+    "price": 0.6,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 23,
+  "fields": {
+    "product": 8,
+    "quote_quantity": 2,
+    "price": 0.8,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 24,
+  "fields": {
+    "product": 8,
+    "quote_quantity": 1,
+    "price": 1.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 25,
+  "fields": {
+    "product": 9,
+    "quote_quantity": 3,
+    "price": 0.05,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 26,
+  "fields": {
+    "product": 9,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 27,
+  "fields": {
+    "product": 9,
+    "quote_quantity": 1,
+    "price": 0.2,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 28,
+  "fields": {
+    "product": 10,
+    "quote_quantity": 3,
+    "price": 0.005,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 29,
+  "fields": {
+    "product": 10,
+    "quote_quantity": 2,
+    "price": 0.01,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 30,
+  "fields": {
+    "product": 10,
+    "quote_quantity": 1,
+    "price": 0.014,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 31,
+  "fields": {
+    "product": 11,
+    "quote_quantity": 3,
+    "price": 6.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 32,
+  "fields": {
+    "product": 11,
+    "quote_quantity": 2,
+    "price": 7.6,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 33,
+  "fields": {
+    "product": 11,
+    "quote_quantity": 1,
+    "price": 8.9,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 34,
+  "fields": {
+    "product": 12,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 35,
+  "fields": {
+    "product": 12,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 36,
+  "fields": {
+    "product": 12,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 37,
+  "fields": {
+    "product": 13,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 38,
+  "fields": {
+    "product": 13,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 39,
+  "fields": {
+    "product": 13,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 40,
+  "fields": {
+    "product": 14,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 41,
+  "fields": {
+    "product": 14,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 42,
+  "fields": {
+    "product": 14,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 43,
+  "fields": {
+    "product": 15,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 44,
+  "fields": {
+    "product": 15,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 45,
+  "fields": {
+    "product": 15,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 46,
+  "fields": {
+    "product": 16,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 47,
+  "fields": {
+    "product": 16,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 48,
+  "fields": {
+    "product": 16,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 49,
+  "fields": {
+    "product": 17,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 50,
+  "fields": {
+    "product": 17,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 51,
+  "fields": {
+    "product": 17,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 52,
+  "fields": {
+    "product": 18,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 53,
+  "fields": {
+    "product": 18,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 54,
+  "fields": {
+    "product": 18,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 55,
+  "fields": {
+    "product": 19,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 56,
+  "fields": {
+    "product": 19,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 57,
+  "fields": {
+    "product": 19,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 58,
+  "fields": {
+    "product": 20,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 59,
+  "fields": {
+    "product": 20,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 60,
+  "fields": {
+    "product": 20,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 61,
+  "fields": {
+    "product": 21,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 62,
+  "fields": {
+    "product": 21,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 63,
+  "fields": {
+    "product": 21,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 64,
+  "fields": {
+    "product": 22,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 65,
+  "fields": {
+    "product": 22,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 66,
+  "fields": {
+    "product": 22,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 67,
+  "fields": {
+    "product": 23,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 68,
+  "fields": {
+    "product": 23,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 69,
+  "fields": {
+    "product": 23,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 70,
+  "fields": {
+    "product": 24,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 71,
+  "fields": {
+    "product": 24,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 72,
+  "fields": {
+    "product": 24,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 73,
+  "fields": {
+    "product": 25,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 74,
+  "fields": {
+    "product": 25,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 75,
+  "fields": {
+    "product": 25,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 76,
+  "fields": {
+    "product": 26,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 77,
+  "fields": {
+    "product": 26,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 78,
+  "fields": {
+    "product": 26,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 79,
+  "fields": {
+    "product": 27,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 80,
+  "fields": {
+    "product": 27,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 81,
+  "fields": {
+    "product": 27,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 82,
+  "fields": {
+    "product": 28,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 83,
+  "fields": {
+    "product": 28,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 84,
+  "fields": {
+    "product": 28,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 85,
+  "fields": {
+    "product": 29,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 86,
+  "fields": {
+    "product": 29,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 87,
+  "fields": {
+    "product": 29,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 88,
+  "fields": {
+    "product": 30,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 89,
+  "fields": {
+    "product": 30,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 90,
+  "fields": {
+    "product": 30,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 91,
+  "fields": {
+    "product": 31,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 92,
+  "fields": {
+    "product": 31,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 93,
+  "fields": {
+    "product": 31,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 94,
+  "fields": {
+    "product": 32,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 95,
+  "fields": {
+    "product": 32,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 96,
+  "fields": {
+    "product": 32,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 97,
+  "fields": {
+    "product": 33,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 98,
+  "fields": {
+    "product": 33,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 99,
+  "fields": {
+    "product": 33,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 100,
+  "fields": {
+    "product": 34,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 101,
+  "fields": {
+    "product": 34,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 102,
+  "fields": {
+    "product": 34,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 103,
+  "fields": {
+    "product": 35,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 104,
+  "fields": {
+    "product": 35,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 105,
+  "fields": {
+    "product": 35,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 106,
+  "fields": {
+    "product": 36,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 107,
+  "fields": {
+    "product": 36,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 108,
+  "fields": {
+    "product": 36,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 109,
+  "fields": {
+    "product": 37,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 110,
+  "fields": {
+    "product": 37,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 111,
+  "fields": {
+    "product": 37,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 112,
+  "fields": {
+    "product": 38,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 113,
+  "fields": {
+    "product": 38,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 114,
+  "fields": {
+    "product": 38,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 115,
+  "fields": {
+    "product": 39,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 116,
+  "fields": {
+    "product": 39,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 117,
+  "fields": {
+    "product": 39,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 118,
+  "fields": {
+    "product": 40,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 119,
+  "fields": {
+    "product": 40,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 120,
+  "fields": {
+    "product": 40,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 121,
+  "fields": {
+    "product": 41,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 122,
+  "fields": {
+    "product": 41,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 123,
+  "fields": {
+    "product": 41,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 124,
+  "fields": {
+    "product": 42,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 125,
+  "fields": {
+    "product": 42,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 126,
+  "fields": {
+    "product": 42,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 127,
+  "fields": {
+    "product": 43,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 128,
+  "fields": {
+    "product": 43,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 129,
+  "fields": {
+    "product": 43,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 130,
+  "fields": {
+    "product": 44,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 131,
+  "fields": {
+    "product": 44,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 132,
+  "fields": {
+    "product": 44,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 133,
+  "fields": {
+    "product": 45,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 134,
+  "fields": {
+    "product": 45,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 135,
+  "fields": {
+    "product": 45,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 136,
+  "fields": {
+    "product": 46,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 137,
+  "fields": {
+    "product": 46,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 138,
+  "fields": {
+    "product": 46,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 139,
+  "fields": {
+    "product": 47,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 140,
+  "fields": {
+    "product": 47,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 141,
+  "fields": {
+    "product": 47,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 142,
+  "fields": {
+    "product": 48,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 143,
+  "fields": {
+    "product": 48,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 144,
+  "fields": {
+    "product": 48,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 145,
+  "fields": {
+    "product": 49,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 146,
+  "fields": {
+    "product": 49,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 147,
+  "fields": {
+    "product": 49,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 148,
+  "fields": {
+    "product": 50,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 149,
+  "fields": {
+    "product": 50,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 150,
+  "fields": {
+    "product": 50,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 151,
+  "fields": {
+    "product": 51,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 152,
+  "fields": {
+    "product": 51,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 153,
+  "fields": {
+    "product": 51,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 154,
+  "fields": {
+    "product": 52,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 155,
+  "fields": {
+    "product": 52,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 156,
+  "fields": {
+    "product": 52,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 157,
+  "fields": {
+    "product": 53,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 158,
+  "fields": {
+    "product": 53,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 159,
+  "fields": {
+    "product": 53,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 160,
+  "fields": {
+    "product": 54,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 161,
+  "fields": {
+    "product": 54,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 162,
+  "fields": {
+    "product": 54,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 163,
+  "fields": {
+    "product": 55,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 164,
+  "fields": {
+    "product": 55,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 165,
+  "fields": {
+    "product": 55,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 166,
+  "fields": {
+    "product": 56,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 167,
+  "fields": {
+    "product": 56,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 168,
+  "fields": {
+    "product": 56,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 169,
+  "fields": {
+    "product": 57,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 170,
+  "fields": {
+    "product": 57,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 171,
+  "fields": {
+    "product": 57,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 172,
+  "fields": {
+    "product": 58,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 173,
+  "fields": {
+    "product": 58,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 174,
+  "fields": {
+    "product": 58,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 175,
+  "fields": {
+    "product": 59,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 176,
+  "fields": {
+    "product": 59,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 177,
+  "fields": {
+    "product": 59,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 178,
+  "fields": {
+    "product": 60,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 179,
+  "fields": {
+    "product": 60,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 180,
+  "fields": {
+    "product": 60,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 181,
+  "fields": {
+    "product": 61,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 182,
+  "fields": {
+    "product": 61,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 183,
+  "fields": {
+    "product": 61,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 184,
+  "fields": {
+    "product": 62,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 185,
+  "fields": {
+    "product": 62,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 186,
+  "fields": {
+    "product": 62,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 187,
+  "fields": {
+    "product": 63,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 188,
+  "fields": {
+    "product": 63,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 189,
+  "fields": {
+    "product": 63,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 190,
+  "fields": {
+    "product": 64,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 191,
+  "fields": {
+    "product": 64,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 192,
+  "fields": {
+    "product": 64,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 193,
+  "fields": {
+    "product": 65,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 194,
+  "fields": {
+    "product": 65,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 195,
+  "fields": {
+    "product": 65,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 196,
+  "fields": {
+    "product": 66,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 197,
+  "fields": {
+    "product": 66,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 198,
+  "fields": {
+    "product": 66,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 199,
+  "fields": {
+    "product": 67,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 200,
+  "fields": {
+    "product": 67,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 201,
+  "fields": {
+    "product": 67,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 202,
+  "fields": {
+    "product": 68,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 203,
+  "fields": {
+    "product": 68,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 204,
+  "fields": {
+    "product": 68,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 205,
+  "fields": {
+    "product": 69,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 206,
+  "fields": {
+    "product": 69,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 207,
+  "fields": {
+    "product": 69,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 208,
+  "fields": {
+    "product": 70,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 209,
+  "fields": {
+    "product": 70,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 210,
+  "fields": {
+    "product": 70,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 211,
+  "fields": {
+    "product": 71,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 212,
+  "fields": {
+    "product": 71,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 213,
+  "fields": {
+    "product": 71,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 214,
+  "fields": {
+    "product": 72,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 215,
+  "fields": {
+    "product": 72,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 216,
+  "fields": {
+    "product": 72,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 217,
+  "fields": {
+    "product": 73,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 218,
+  "fields": {
+    "product": 73,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 219,
+  "fields": {
+    "product": 73,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 220,
+  "fields": {
+    "product": 74,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 221,
+  "fields": {
+    "product": 74,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 222,
+  "fields": {
+    "product": 74,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 223,
+  "fields": {
+    "product": 75,
+    "quote_quantity": 3,
+    "price": 3.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 224,
+  "fields": {
+    "product": 75,
+    "quote_quantity": 2,
+    "price": 4.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 225,
+  "fields": {
+    "product": 75,
+    "quote_quantity": 1,
+    "price": 5.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 226,
+  "fields": {
+    "product": 76,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 227,
+  "fields": {
+    "product": 76,
+    "quote_quantity": 2,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 228,
+  "fields": {
+    "product": 76,
+    "quote_quantity": 1,
+    "price": 0.24,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 229,
+  "fields": {
+    "product": 77,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 230,
+  "fields": {
+    "product": 77,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 231,
+  "fields": {
+    "product": 77,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 232,
+  "fields": {
+    "product": 78,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 233,
+  "fields": {
+    "product": 78,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 234,
+  "fields": {
+    "product": 78,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 235,
+  "fields": {
+    "product": 79,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 236,
+  "fields": {
+    "product": 79,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 237,
+  "fields": {
+    "product": 79,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 238,
+  "fields": {
+    "product": 80,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 239,
+  "fields": {
+    "product": 80,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 240,
+  "fields": {
+    "product": 80,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 241,
+  "fields": {
+    "product": 81,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 242,
+  "fields": {
+    "product": 81,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 243,
+  "fields": {
+    "product": 81,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 244,
+  "fields": {
+    "product": 82,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 245,
+  "fields": {
+    "product": 82,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 246,
+  "fields": {
+    "product": 82,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 247,
+  "fields": {
+    "product": 83,
+    "quote_quantity": 3,
+    "price": 0.06,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 248,
+  "fields": {
+    "product": 83,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 249,
+  "fields": {
+    "product": 83,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 250,
+  "fields": {
+    "product": 84,
+    "quote_quantity": 3,
+    "price": 0.07,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 251,
+  "fields": {
+    "product": 84,
+    "quote_quantity": 2,
+    "price": 0.11,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 252,
+  "fields": {
+    "product": 84,
+    "quote_quantity": 1,
+    "price": 0.16,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 253,
+  "fields": {
+    "product": 85,
+    "quote_quantity": 3,
+    "price": 0.08,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 254,
+  "fields": {
+    "product": 85,
+    "quote_quantity": 2,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 255,
+  "fields": {
+    "product": 85,
+    "quote_quantity": 1,
+    "price": 0.17,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 256,
+  "fields": {
+    "product": 86,
+    "quote_quantity": 3,
+    "price": 12.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 257,
+  "fields": {
+    "product": 86,
+    "quote_quantity": 2,
+    "price": 15.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 258,
+  "fields": {
+    "product": 86,
+    "quote_quantity": 1,
+    "price": 17.0,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 259,
+  "fields": {
+    "product": 87,
+    "quote_quantity": 3,
+    "price": 0.13,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 260,
+  "fields": {
+    "product": 87,
+    "quote_quantity": 2,
+    "price": 0.14,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 261,
+  "fields": {
+    "product": 87,
+    "quote_quantity": 1,
+    "price": 0.15,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 262,
+  "fields": {
+    "product": 88,
+    "quote_quantity": 3,
+    "price": 0.6,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 263,
+  "fields": {
+    "product": 88,
+    "quote_quantity": 2,
+    "price": 0.1,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 264,
+  "fields": {
+    "product": 88,
+    "quote_quantity": 1,
+    "price": 0.12,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 265,
+  "fields": {
+    "product": 89,
+    "quote_quantity": 3,
+    "price": 1.2,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 266,
+  "fields": {
+    "product": 89,
+    "quote_quantity": 2,
+    "price": 2.8,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 267,
+  "fields": {
+    "product": 89,
+    "quote_quantity": 1,
+    "price": 3.2,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 268,
+  "fields": {
+    "product": 90,
+    "quote_quantity": 3,
+    "price": 0.45,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 269,
+  "fields": {
+    "product": 90,
+    "quote_quantity": 2,
+    "price": 0.8,
+    "selected": false
+  }
+},
+{
+  "model": "npi.supplierproductquote",
+  "pk": 270,
+  "fields": {
+    "product": 90,
+    "quote_quantity": 1,
+    "price": 1.2,
+    "selected": false
+  }
+}
+]

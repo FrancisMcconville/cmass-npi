@@ -1,0 +1,119 @@
+{% extends navigation_template %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb project 'npi:viewProject' pk=project.id %}
+{% endblock %}
+
+{% block cssfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'DataTables-1.10.16/css/dataTables.bootstrap.css' %}"/>
+{% endblock %}
+
+{% block jsfiles %}
+    <script type="text/javascript" src="{% static 'DataTables-1.10.16/js/jquery.dataTables.js' %}"></script>
+    <script type="text/javascript" src="{% static 'DataTables-1.10.16/js/dataTables.bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ajax-view-modal.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{ project.customer_name }} <span class="description">{{ project.description|default_if_none:'' }}</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-condensed table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Supplier Information</th>
+                            <th>BOM Structure Information</th>
+                            <th>Web Pricing</th>
+                            <th>Quotation Quantities</th>
+                            <th>Create Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ project.products }}</td>
+                            <td> <a href="{% url 'npi:viewSupplierInfo' pk=project.id%}">{{ project.supplier_info_state_string }} </a></td>
+                            <td> <a href="{% url 'npi:viewBom' pk=project.id%}">{{ project.bom_state_string }} </a></td>
+                            <td> {% if project.web_pricing %}Yes{% else %}No{% endif %} </td>
+                            <td> {{ project.quotation_quantities }} </td>
+                            <td> {{ project.create_date }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <label>Bill of Materials</label>
+                <table class="table table-striped table-condensed table-hover table-bordered dataTable">
+                    <thead>
+                        <th>OpenERP Product</th>
+                        <th>Parent Product</th>
+                        <th>Parent Description</th>
+                        <th>Parent Quantity</th>
+                        <th>Parent Routing</th>
+                        <th>MPN</th>
+                        <th>Manufacturer</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>UOM</th>
+                        <th>Suppliers Quoted</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        var table = $('.dataTable').DataTable({
+            order: [[ 0, "asc" ]],
+            lengthMenu: [[25, 50, 100], [25, 50, 100]],
+            columnDefs: [
+                {orderable: true,
+                 searchable: true,
+                 className: "center",
+                 targets: [0, 1, 2, 3, 4, 7]
+                },
+                {orderable: true,
+                 searchable: false,
+                 className: "center",
+                 targets: [5, 6]
+                }
+            ],
+            searching: true,
+            processing: true,
+            serverSide: true,
+            scrollY: true,
+            dom:
+                "<'row'<'col-sm-6'l><'col-sm-6'f>>" +
+                "<'row'<'col-sm-12'tr>>" +
+                "<'row'<'col-sm-6'i><'col-sm-6'p>>",
+            language: {
+                "paginate": {
+                    "first":      "<<",
+                    "last":       ">>",
+                    "next":       ">",
+                    "previous":   "<"
+                },
+            },
+            ajax: {
+                "url": '{% url 'npi:projectComponentsDatatable' %}',
+                "data": function( d ) {
+                    return $.extend( {}, d, {
+                        "project_id": {{ project.id }}
+                    });
+                }
+            }
+        });
+    </script>
+{% endblock %}

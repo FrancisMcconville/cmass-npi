@@ -1,0 +1,66 @@
+-   model: metrics.productuomcateg
+    pk: 1
+    fields: {name: Units}
+-   model: metrics.productuomcateg
+    pk: 4
+    fields: {name: 'Length / Distance'}
+-   model: metrics.productuom
+    pk: 1
+    fields: {uom_type: 'reference', category: 1, name: 'PCE', rounding: 1, factor: 1, active: true}
+-   model: metrics.productuom
+    pk: 7
+    fields: {uom_type: 'reference', category: 4, name: 'm', rounding: 1, factor: 1, active: true}
+-   model: metrics.productuom
+    pk: 27
+    fields: {uom_type: 'smaller', category: 4, name: 'mm', rounding: 1, factor: 1000, active: true}
+-   model: metrics.productuom
+    pk: 39
+    fields: {uom_type: 'bigger', category: 4, name: '30m', rounding: 1, factor: 30, active: true}
+-   model: metrics.productuom
+    pk: 3
+    fields: {uom_type: 'bigger', category: 1, name: 'Box200', rounding: 1, factor: 0.005, active: true}
+-   model: metrics.productuom
+    pk: 4
+    fields: {uom_type: 'bigger', category: 1, name: 'Box1000', rounding: 1, factor: 0.001, active: true}
+-   model: metrics.respartner
+    pk: 1
+    fields: {active: true, customer: false, name: 'Supplier 1', employee: false, supplier: true, is_company: true}
+-   model: metrics.respartner
+    pk: 2
+    fields: {active: true, customer: true, name: 'Customer 1', employee: false, supplier: false, is_company: true}
+-   model: metrics.mrprouting
+    pk: 1
+    fields: {code: 'PCBA1', name: 'PCBA Routing', active: true}
+-   model: metrics.mrprouting
+    pk: 2
+    fields: {code: 'B1F1S0A', name: 'Simple Build and Test', active: true}
+-   model: metrics.respartner
+    pk: 420
+    fields: {active: true, customer: false, name: 'Farnell UK', employee: false, supplier: true, is_company: true}
+-   model: metrics.respartner
+    pk: 502
+    fields: {active: true, customer: false, name: 'Digi-Key', employee: false, supplier: true, is_company: true}
+-   model: metrics.respartner
+    pk: 346
+    fields: {active: true, customer: false, name: 'RS Components', employee: false, supplier: true, is_company: true}
+-   model: metrics.respartner
+    pk: 448
+    fields: {active: true, customer: false, name: 'Mouser Electronics', employee: false, supplier: true, is_company: true}
+-   model: metrics.respartner
+    pk: 1858
+    fields: {active: true, customer: false, name: 'Eurocircuits NV', employee: false, supplier: true, is_company: true}
+-   model: metrics.productproduct
+    pk: 1
+    fields: {default_code: 'CM0000001'}
+-   model: metrics.productsupplierinfo
+    pk: 1
+    fields: {name: 420, product_code: "TEST_EXISTING_FARNELL_ORDER_CODE", manufacturer_part_no: "TESTMPN", manufacturer_name: "TEST", sequence: 10, product_id: 1 }
+-   model: metrics.productproduct
+    pk: 2
+    fields: {default_code: 'CM0000002'}
+-   model: metrics.productsupplierinfo
+    pk: 2
+    fields: {name: 420, product_code: "TEST_EXISTING_FARNELL_ORDER_CODE", manufacturer_part_no: "TEST_FARNELL_MPN", manufacturer_name: "TEST", sequence: 10, product_id: 2 }
+-   model: metrics.productsupplierinfo
+    pk: 2
+    fields: {name: 420, product_code: "ANOTHER_DUPLICATE", manufacturer_part_no: "TEST_FARNELL_MPN", manufacturer_name: "TEST", sequence: 20, product_id: 2 }

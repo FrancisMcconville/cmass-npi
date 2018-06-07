@@ -1,0 +1,6 @@
+{% extends 'base/base.html' %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {% breadcrumb "NPI Projects" "npi:listProjects" %}
+{% endblock %}

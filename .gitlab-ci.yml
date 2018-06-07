@@ -1,0 +1,15 @@
+image: python:3.4
+
+cache:
+  paths:
+  - ~/.cache/pip/
+
+before_script:
+  - python -V 
+  - pip install -r requirements.txt
+  - python manage.py migrate
+
+test_npi:
+  script:
+  - coverage run manage.py test npi.tests --settings=METRICS_PROJECT.test_settings
+  - coverage report -m

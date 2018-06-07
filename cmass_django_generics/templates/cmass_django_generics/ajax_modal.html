@@ -1,0 +1,81 @@
+{% with 'ajax-view-link' as modal_link_class %}
+{% with select2create as select2_create_link_class %}
+
+<div id="{{ template_id }}" class="modal fade template-modal" data-backdrop="static" tabindex="0" role="dialog" aria-labelledby="modelContainerLabel" {% if refresh %}refresh="refresh"{% endif %}>
+
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                {% if controls %}
+                    {% if controls.form_title %}
+                        <div class="form-title" id="modelContainerLabel">{{ controls.form_title }}</div>
+                    {% endif %}
+
+                    <div id="navigation-buttons" align="right">
+                        {% if controls.record_navigation_buttons %}
+                            {% for button in controls.record_navigation_buttons %}
+                                <a id="{{ button.id }}" class="{{ button.class }}" href="{{ button.link }}" title="{{ button.title }}" type="button">{{ button.text }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="modal-body">
+
+                {% block body %}
+                    {{ message }}
+                {% endblock %}
+            </div>
+
+    {#       modal_footer_controls to contain list of buttons and other controls  #}
+            {% if modal_footer_controls %}
+                <div class="modal-footer">
+                    {% for button in modal_footer_controls %}
+                        <a
+                            id="{{ button.id }}"
+                            class="{{ button.class }}"
+                            href="{{ button.link }}"
+                            type="button"
+                            {% if button.refresh %} refresh="refresh" {% endif %}
+                            {% if button.name %} name="{{ button.name }}" {% endif %}
+                            {% if button.title %} title="{{ button.title }}" {% endif %}
+                            {% if button.extra_attrs %}
+                               {% for attribute in button.extra_attrs %}
+                                   {{ attribute.key }}="{{ attribute.val }}"
+                               {% endfor %}
+                            {% endif %}>
+                            {{ button.text }}
+                        </a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+    <!-- CSS Links
+    {% block cssfiles %}
+    {% endblock %}
+    -->
+
+    <!-- JS Links
+    {% block jsfiles %}
+    {% endblock %}
+    -->
+    <script>
+        $(".template-modal:last").trigger("ajax-view-modal.update-links");
+    </script>
+</div>
+{% endwith %}
+{% endwith %}
+
+
+

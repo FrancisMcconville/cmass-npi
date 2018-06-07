@@ -1,0 +1,32 @@
+{% extends 'npi/project/view.html' %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Update BOM' 'npi:viewProject' pk=project.id %}
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+                <span class="warning">Updating the BOM will delete all Uploaded Quotes and XY data</span>
+            </div>
+            <div class="row">
+                <div class="col-md-12 form-group {% if form.spreadsheet.errors %}has-error{% endif %}">
+                    <label class='control-label' for="{{ form.spreadsheet.name }}">{{ form.spreadsheet.label }}</label>
+                    <br/>
+                    <small id="bomTextHelp" class="form-text text-muted">{{ form.spreadsheet.help_text }}</small>
+
+                    {{ form.spreadsheet.errors }}
+                    {{ form.spreadsheet }}
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" class="btn btn-primary" value="Upload"/>
+            </div>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,83 @@
+{% extends 'npi/bom/view.html' %}
+{% load staticfiles %}
+{% load django_bootstrap_breadcrumbs %}
+{% load render_table from django_tables2 %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% breadcrumb 'Upload' 'npi:uploadBom' pk=project.id %}
+{% endblock %}
+
+{% block cssfiles %}
+    <link href=" {% static 'autocomplete_light/vendor/select2/dist/css/select2.css' %}" type="text/css" media="all" rel="stylesheet" />
+    <link href=" {% static 'autocomplete_light/select2.css' %}" type="text/css" media="all" rel="stylesheet" />
+{% endblock %}
+
+{% block jsfiles %}
+    <script type="text/javascript" src="{% static 'autocomplete_light/jquery.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/autocomplete.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/vendor/select2/dist/js/select2.full.js' %}"></script>
+    <script type="text/javascript" src="{% static 'autocomplete_light/select2.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-2 form-group {% if form.spreadsheet.errors %}has-error{% endif %}">
+                    <label class='control-label' for="{{ form.spreadsheet.name }}">{{ form.spreadsheet.label }}</label>
+                    <br/>
+                    <small id="bomTextHelp" class="form-text text-muted">{{ form.spreadsheet.help_text }}</small>
+
+                    {{ form.spreadsheet.errors }}
+                    {{ form.spreadsheet }}
+                </div>
+                <div class="col-md-2 form-group">
+                    <label class='control-label' for="{{ form.ignore_missing_designator_warnings.name }}">{{ form.ignore_missing_designator_warnings.label }}</label>
+                    {{ form.ignore_missing_designator_warnings }}
+                    <small id="ignoreHelp" class="form-text text-muted">{{ form.ignore_missing_designator_warnings.help_text }}</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary" value="Upload"/>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{ project.customer_name }} <span class="description">{{ project.description|default_if_none:'' }}</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-condensed table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>BOM Structure Information</th>
+                            <th>Create Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> {{ project.products }} </td>
+                            <td> {{ project.bom_state_string }} </td>
+                            <td> {{ project.create_date }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <label>Parent Products</label>
+                    {% render_table parents_table %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
