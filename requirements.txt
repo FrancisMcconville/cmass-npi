@@ -19,7 +19,7 @@ idna==2.6
 isodate==0.6.0
 jdcal==1.4
 lml==0.0.1
-lxml==4.2.1
+lxml==4.6.2
 openpyxl==2.5.3
 psycopg2==2.7.3.2
 pyexcel==0.5.7
